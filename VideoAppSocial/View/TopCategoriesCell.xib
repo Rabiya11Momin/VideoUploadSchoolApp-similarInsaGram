@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopCategoriesCell" id="gTV-IL-0wX" customClass="TopCategoriesCell" customModule="VideoAppSocial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="83"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGu-o0-BnS">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="83"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="1ws-Hy-z6X">
+                                <rect key="frame" x="13" y="12" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XTa-es-XPL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-5M-KGe">
+                                <rect key="frame" x="3" y="60" width="64" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1ws-Hy-z6X" firstAttribute="leading" secondItem="aGu-o0-BnS" secondAttribute="leading" constant="13" id="0cR-ns-5rd"/>
+                            <constraint firstItem="1ws-Hy-z6X" firstAttribute="top" secondItem="aGu-o0-BnS" secondAttribute="top" constant="12" id="7Ni-xW-QZh"/>
+                            <constraint firstItem="eqi-5M-KGe" firstAttribute="top" secondItem="1ws-Hy-z6X" secondAttribute="bottom" constant="4" id="9F9-pY-sW5"/>
+                            <constraint firstItem="eqi-5M-KGe" firstAttribute="leading" secondItem="aGu-o0-BnS" secondAttribute="leading" constant="3" id="E8x-pA-Jrg"/>
+                            <constraint firstAttribute="trailing" secondItem="1ws-Hy-z6X" secondAttribute="trailing" constant="13" id="LIe-xk-Dz9"/>
+                            <constraint firstAttribute="trailing" secondItem="eqi-5M-KGe" secondAttribute="trailing" constant="3" id="MMN-ZB-Fnh"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eqi-5M-KGe" secondAttribute="bottom" id="YDv-Q9-XG7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aGu-o0-BnS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GLR-a4-vto"/>
+                <constraint firstAttribute="bottom" secondItem="aGu-o0-BnS" secondAttribute="bottom" id="dUM-8n-AS3"/>
+                <constraint firstItem="aGu-o0-BnS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ptK-Nt-x9R"/>
+                <constraint firstAttribute="trailing" secondItem="aGu-o0-BnS" secondAttribute="trailing" id="yGf-Aj-e80"/>
+            </constraints>
+            <size key="customSize" width="70" height="83"/>
+            <connections>
+                <outlet property="idImg" destination="1ws-Hy-z6X" id="P3t-kK-M2Z"/>
+                <outlet property="idNamelbl" destination="eqi-5M-KGe" id="V7u-i9-6AQ"/>
+            </connections>
+            <point key="canvasLocation" x="-5.7971014492753632" y="70.647321428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img" width="1000" height="667"/>
+    </resources>
+</document>

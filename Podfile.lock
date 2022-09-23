@@ -1,0 +1,22 @@
+PODS:
+  - ProgressHUD (13.6)
+  - SDWebImage (5.12.6):
+    - SDWebImage/Core (= 5.12.6)
+  - SDWebImage/Core (5.12.6)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ProgressHUD
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
+
+PODFILE CHECKSUM: c9e6a0f3c1e2beb0bed581b79868c3a71c11f135
+
+COCOAPODS: 1.11.3
